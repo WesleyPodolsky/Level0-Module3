@@ -13,8 +13,15 @@ def draw():
     # Then, use a loop to make a body for the Bee! 
     # (see the image on the recipe, it's a diagonal line of circles)
     # Use modulo to make the colors alternate between yellow and black
-    
-
+    x = 100
+    for i in range(6):
+        if i %2 == 0:
+            fill('#F9FA42')
+        elif i == i:
+            fill('#000000')
+        x = x+20
+        ellipse(x, 120, 50, 100)
+        
 
 
     # Now put his head on using draw_bee_face(x,y)
